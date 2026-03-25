@@ -48,9 +48,31 @@ const cardGrid = document.getElementById("card-grid");
 populateGrid(cardGrid, teamMembers) 
 
 function populateGrid(cardGrid, teamMembers) {
+  cardGrid.innerHTML = "";
   for (let i=0; i<teamMembers.length; i++) {
   const {name, role, email, img} = teamMembers[i];
-  console.log(name, role, email, img);
+  addCard(name, role, email, img, cardGrid);
   }
-  
+}
+
+function addCard(name, role, email, img, cardGrid) {
+    cardGrid.innerHTML +=`<div class="col-md-4 col-5">
+            <div class="card">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="assets/${img}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <p class="card-title">${name}</p>
+                            <p class="card-role">${role}</p>
+                            <p class="card-email">${email}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    `
+    
 }
