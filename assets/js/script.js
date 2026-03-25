@@ -88,7 +88,24 @@ const formImg = document.getElementById("form-img");
 
 formAddUser.addEventListener('submit', function (e) {
 e.preventDefault();
-console.log(formName, formEmail, formImg, formRole);
-
-
+ addCardFromForm(formName, formEmail, formImg, formRole);
 } )
+function addCardFromForm(formName, formEmail, formImg, formRole) {
+  const name = formName.value;
+  const email = formEmail.value;
+  const role = formRole.value;
+  const img = formImg.value;
+  addUser(name, email, role, img);
+  populateGrid(cardGrid, teamMembers);
+}
+
+function addUser(name, email, role, img) {
+   teamMembers.push(
+    {
+      name,
+      email,
+      role,
+      img
+    }
+   )
+}
