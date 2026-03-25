@@ -16,85 +16,121 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="text-center container">
+<body class="container">
     <header>
-        <h1 id="main-title">Meet our Team</h1>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptate sint fugiat odit corrupti expedita
+        <h1 id="main-title" class="text-center">Meet our Team</h1>
+        <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptate sint fugiat odit
+            corrupti expedita
             ducimus ex dolores corporis provident! Nobis qui dicta hic nisi minima. Suscipit totam distinctio beatae.
         </div>
     </header>
+    <main>
 
-    <div class="row d-flex g-4 mt-4" id="card-grid">
-        <div class="col-md-4 col-5">
-            <div class="card">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="assets/img/female2.png" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <p class="card-title">Card title</p>
-                            <p class="card-role">role</p>
-                            <p class="card-email">email</p>
+        <form class="row g-3 m-3">
+            <div class="col-md-6">
+                <label class="form-label">Name:</label>
+                <input type="text" id="form-name" value="" required>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Role:</label>
+                <input type="text" id="form-role" required>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Email:</label>
+                <input type="email" id="form-email" value="test@prova.it" required>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Immagine profilo:</label>
+                <select name="img" id="form-img">
+                      <option value="img/male1.png">male1</option>
+                      <option value="img/male2.png">male2</option>
+                      <option value="img/male3.png">male3</option>
+                      <option value="img/female1.png">female1</option>
+                      <option value="img/female2.png">female2</option>
+                      <option value="img/female3.png">female3</option>
+                </select>
+            </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+
+        <div class="row d-flex g-4 mt-4" id="card-grid">
+            <div class="col-md-4 col-5">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assets/img/female2.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <p class="card-title">Card title</p>
+                                <p class="card-role">role</p>
+                                <p class="card-email">email</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 col-5">
-            <div class="card">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="assets/img/female2.png" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <p class="card-title">Card title</p>
-                            <p class="card-role">role</p>
-                            <p class="card-email">email</p>
+            <div class="col-md-4 col-5">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assets/img/female2.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <p class="card-title">Card title</p>
+                                <p class="card-role">role</p>
+                                <p class="card-email">email</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 col-5">
-            <div class="card">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="assets/img/female2.png" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <p class="card-title">Card title</p>
-                            <p class="card-role">role</p>
-                            <p class="card-email">email</p>
+            <div class="col-md-4 col-5">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assets/img/female2.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <p class="card-title">Card title</p>
+                                <p class="card-role">role</p>
+                                <p class="card-email">email</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 col-5">
-            <div class="card">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="assets/img/female2.png" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <p class="card-title">Card title</p>
-                            <p class="card-role">role</p>
-                            <p class="card-email">email</p>
+            <div class="col-md-4 col-5">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assets/img/female2.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <p class="card-title">Card title</p>
+                                <p class="card-role">role</p>
+                                <p class="card-email">email</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
-    </div>
 
 
+        </div>
 
-    </div>
+    </main>
 
     <script src="assets/js/script.js"></script>
 </body>

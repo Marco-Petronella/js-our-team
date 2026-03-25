@@ -11,7 +11,17 @@
 .card-body {
     p {
         line-height: 1em;
-        margin: 0;
+        margin: 5px ;
+        font-size: small;
+    }
+    .card-title {
+        font-weight: 600;
+    }
+    .card-role {
+        color: darkgrey;
+    }
+    .card-email {
+        color:cornflowerblue;
     }
 }
 .row {
