@@ -74,5 +74,21 @@ function addCard(name, role, email, img, cardGrid) {
         </div>
     
     `
-    
 }
+
+/*
+Aggiungere un form di aggiunta membri che permetta
+ di visualizzare il nuovo membro sulla pagina
+*/
+const formAddUser = document.querySelector("form");
+const formName = document.getElementById("form-name");
+const formRole = document.getElementById("form-role");
+const formEmail = document.getElementById("form-email");
+const formImg = document.getElementById("form-img");
+
+formAddUser.addEventListener('submit', function (e) {
+e.preventDefault();
+console.log(formName, formEmail, formImg, formRole);
+
+
+} )
