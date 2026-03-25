@@ -56,11 +56,11 @@ function populateGrid(cardGrid, teamMembers) {
 }
 
 function addCard(name, role, email, img, cardGrid) {
-    cardGrid.innerHTML +=`<div class="col-md-4 col-5">
+    cardGrid.innerHTML +=`<div class="col-md-4 col-6">
             <div class="card">
                 <div class="row">
                     <div class="col-4">
-                        <img src="assets/${img}" class="img-fluid" alt="...">
+                        <img src="assets/${img}" class="img-fluid card-img" alt="...">
                     </div>
                     <div class="col-8">
                         <div class="card-body">

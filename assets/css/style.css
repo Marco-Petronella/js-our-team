@@ -24,6 +24,9 @@
         color:cornflowerblue;
     }
 }
+.card-img {
+    min-width: 100px;
+}
 .row {
     justify-content: space-evenly;
 }
