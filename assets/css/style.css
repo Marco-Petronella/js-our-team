@@ -2,3 +2,18 @@
     font-weight: 800;
     color:deeppink
 }
+
+.card {
+    background-color: black;
+    color: white;
+}
+
+.card-body {
+    p {
+        line-height: 1em;
+        margin: 0;
+    }
+}
+.row {
+    justify-content: space-evenly;
+}
